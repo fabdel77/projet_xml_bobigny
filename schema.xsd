@@ -87,7 +87,7 @@
 		</xsd:restriction>
 	</xsd:simpleType>
 
-	<xsd:simpleType name="motClef">
+	<xsd:simpleType name="motClefType">
 		<xsd:restriction base="xsd:string">	
 			<xsd:maxLength value="20"/>
 		</xsd:restriction>
@@ -136,7 +136,120 @@
 	</xsd:simpleType>
 
 <!-- déclarations des types complexes -->
+	<xsd:complexType name="apprentiType">
+		<xsd:sequence>
+			<xsd:element ref="INE"/>
+			<xsd:element ref="prenom"/>
+			<xsd:element ref="nom"/>
+			<xsd:element ref="formation"/>
+			<xsd:element ref="promotion"/>
+			<xsd:element ref="tuteurPedago"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="tuteurPedagoType">
+		<xsd:sequence>
+			<xsd:element ref="prenom"/>
+			<xsd:element ref="nom"/>
+			<xsd:element ref="fonction"/>
+			<xsd:element ref="mail"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="entrepriseType">
+		<xsd:sequence>
+			<xsd:element ref="secteur"/>
+			<xsd:element ref="site"/>
+			<xsd:element ref="nom"/>
+			<xsd:element ref="adresse"/>
+			<xsd:element ref="taille"/>
+			<xsd:element ref="description"/>
+			<xsd:element ref="siret"/>
+			<xsd:element ref="maitreApprentissage"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="maitreApprentissageType">
+		<xsd:sequence>
+			<xsd:element ref="prenom"/>
+			<xsd:element ref="nom"/>
+			<xsd:element ref="fonction"/>
+			<xsd:element ref="mail"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="contenuType">
+		<xsd:sequence>
+			<xsd:element ref="titre"/>
+			<xsd:element ref="motsClefs"/>
+			<xsd:element ref="problematique"/>
+			<xsd:element ref="missions"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="motsClefsType">
+		<xsd:sequence>
+			<xsd:element ref="motClef"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="missionsType">
+		<xsd:sequence>
+			<xsd:element ref="mission"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="missionType">
+		<xsd:sequence>
+			<xsd:element ref="description"/>
+			<xsd:element ref="libelle"/>
+			<xsd:element ref="duree"/>
+			<xsd:element ref="outils"/>
+			<xsd:element ref="techno"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="outilsType">
+		<xsd:sequence>
+			<xsd:element ref="outil"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="technosType">
+		<xsd:sequence>
+			<xsd:element ref="techno"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="FicheMemoire">
+		<xsd:sequence>
+			<xsd:element ref="apprenti"/>
+			<xsd:element ref="entreprise"/>
+			<xsd:element ref='contenu'/>
+		</xsd:sequence>
+	</xsd:complexType>
+<!-- déclarations des attributs communs à plusieurs éléments -->
 
+<!-- déclarations des éléments de type simple -->
+	<xsd:element name="INE" type="INE"/>
+	<xsd:element name="prenom" type="prenom"/>
+	<xsd:element name="nom" type="nom"/>
+	<xsd:element name="formation" type="formation"/>
+	<xsd:element name="promotion" type="promotion"/>
+	<xsd:element name="fonction" type="fonction"/>
+	<xsd:element name="secteur" type="secteur"/>
+	<xsd:element name="site" type="site"/>
+	<xsd:element name="adresse" type="adresse"/>
+	<xsd:element name="taille" type="taille"/>
+	<xsd:element name="siret" type="siret"/>
+	<xsd:element name="titre" type="titre"/>
+	<xsd:element name="motClef" type="motClefType"/>
+	<xsd:element name="problematique" type="problematique"/>
+	<xsd:element name="libelle" type="libelle"/>
+	<xsd:element name="duree" type="duree"/>
+	<xsd:element name="outil" type="outil"/>
+	<xsd:element name="techno" type="techno"/>
+	<xsd:element name="note" type="note"/>
 <!-- déclarations des éléments de type complexe -->
+	<xsd:element name="apprenti" type="apprentiType"/>
+	<xsd:element name="tuteurPedago" type="tuteurPedagoType"/>
+	<xsd:element name="entreprise" type="entrepriseType"/>
+	<xsd:element name="maitreApprentissage" type="maitreApprentissageType"/>
+	<xsd:element name="contenu" type="contenuType"/>
+	<xsd:element name="missions" type="missionsType"/>
+	<xsd:element name="mission" type="missionType"/>
+	<xsd:element name="outils" type="outilsType"/>
+	<xsd:element name="technos" type="technosType"/>
+	<xsd:element name="ficheMemoire" type="ficheMemoireType"/>
 
 </xsd:schema>
