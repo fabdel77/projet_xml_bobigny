@@ -29,7 +29,7 @@
 
 	<xsd:simpleType name="promotion">
 		<xsd:restriction base="xsd:gYear">	
-			<xs:minInclusive value="1994"/>
+			<xsd:minInclusive value="1994"/>
 		</xsd:restriction>
 	</xsd:simpleType>
 
@@ -76,7 +76,7 @@
 	</xsd:simpleType>
 
 	<xsd:simpleType name="siret">
-		<xsd:restriction base="xsd:decimal">	
+		<xsd:restriction base="xsd:string">	
 			<xsd:maxLength value="14"/>
 		</xsd:restriction>
 	</xsd:simpleType>
@@ -106,8 +106,7 @@
 	</xsd:simpleType>
 
 	<xsd:simpleType name="duree">
-		<xsd:restriction base="xsd:decimal">	
-			<xsd:maxLength value="3"/>
+		<xsd:restriction base="xsd:duration">	
 		</xsd:restriction>
 	</xsd:simpleType>
 
@@ -131,15 +130,12 @@
 
 	<xsd:simpleType name="Note">
 		<xsd:restriction base="xsd:decimal">	
-			<xsd:maxLength value="2"/>
+			<xsd:minInclusive value="0"/>
+			<xsd:maxInclusive value="20"/>
 		</xsd:restriction>
 	</xsd:simpleType>
 
 <!-- déclarations des types complexes -->
-
-<!-- déclarations des attributs communs à plusieurs éléments -->
-
-<!-- déclarations des éléments de type simple -->
 
 <!-- déclarations des éléments de type complexe -->
 
