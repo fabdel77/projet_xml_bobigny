@@ -184,12 +184,12 @@
 	</xsd:complexType>
 	<xsd:complexType name="motsClefsType">
 		<xsd:sequence>
-			<xsd:element ref="motClef"/>
+			<xsd:element ref="motClef" minOccurs="1" maxOccurs="unbounded"/>
 		</xsd:sequence>
 	</xsd:complexType>
 	<xsd:complexType name="missionsType">
 		<xsd:sequence>
-			<xsd:element ref="mission"/>
+			<xsd:element ref="mission" minOccurs="1" maxOccurs="unbounded"/>
 		</xsd:sequence>
 	</xsd:complexType>
 	<xsd:complexType name="missionType">
@@ -203,12 +203,12 @@
 	</xsd:complexType>
 	<xsd:complexType name="outilsType">
 		<xsd:sequence>
-			<xsd:element ref="outil"/>
+			<xsd:element ref="outil" minOccurs="1" maxOccurs="unbounded"/>
 		</xsd:sequence>
 	</xsd:complexType>
 	<xsd:complexType name="technosType">
 		<xsd:sequence>
-			<xsd:element ref="techno"/>
+			<xsd:element ref="techno" minOccurs="1" maxOccurs="unbounded"/>
 		</xsd:sequence>
 	</xsd:complexType>
 	<xsd:complexType name="ficheMemoireType">
