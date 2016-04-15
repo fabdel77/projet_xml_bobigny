@@ -128,7 +128,7 @@
 		</xsd:restriction>
 	</xsd:simpleType>
 
-	<xsd:simpleType name="Note">
+	<xsd:simpleType name="note">
 		<xsd:restriction base="xsd:decimal">	
 			<xsd:minInclusive value="0"/>
 			<xsd:maxInclusive value="20"/>
@@ -211,7 +211,7 @@
 			<xsd:element ref="techno"/>
 		</xsd:sequence>
 	</xsd:complexType>
-	<xsd:complexType name="FicheMemoire">
+	<xsd:complexType name="ficheMemoireType">
 		<xsd:sequence>
 			<xsd:element ref="apprenti"/>
 			<xsd:element ref="entreprise"/>
@@ -227,10 +227,12 @@
 	<xsd:element name="formation" type="formation"/>
 	<xsd:element name="promotion" type="promotion"/>
 	<xsd:element name="fonction" type="fonction"/>
+	<xsd:element name="mail" type="mail"/>
 	<xsd:element name="secteur" type="secteur"/>
 	<xsd:element name="site" type="site"/>
 	<xsd:element name="adresse" type="adresse"/>
-	<xsd:element name="taille" type="taille"/>
+	<xsd:element name="taille" type="tailleEntreprise"/>
+	<xsd:element name="description" type="description"/>
 	<xsd:element name="siret" type="siret"/>
 	<xsd:element name="titre" type="titre"/>
 	<xsd:element name="motClef" type="motClefType"/>
@@ -246,6 +248,7 @@
 	<xsd:element name="entreprise" type="entrepriseType"/>
 	<xsd:element name="maitreApprentissage" type="maitreApprentissageType"/>
 	<xsd:element name="contenu" type="contenuType"/>
+	<xsd:element name="motsClefs" type="motsClefsType"/>
 	<xsd:element name="missions" type="missionsType"/>
 	<xsd:element name="mission" type="missionType"/>
 	<xsd:element name="outils" type="outilsType"/>
