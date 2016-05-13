@@ -13,9 +13,9 @@
 		</tuteurPedago>
 	</apprenti>
 	<entreprise>
-		<secteur></secteur>
-		<site></site>
 		<nom></nom>
+		<site></site>
+		<secteur></secteur>
 		<adresse></adresse>
 		<taille></taille>
 		<description></description>
