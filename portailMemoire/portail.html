@@ -2,12 +2,19 @@
 <html lang='fr'>
 	<head>
 		<title>Portail - recherche de mémoires </title>
-		<meta chartset="utf8"/>
-		<link rel="stylesheet" href="style/partail.css">
-		<script type="text/script" src="script/portail.js"></script>
+		<meta charset="UTF-8"/>
+		<!--<script src="https://code.jquery.com/jquery-1.12.3.min.js"   integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="   crossorigin="anonymous"></script>
+		<script   src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"   integrity="sha256-xNjb53/rY+WmG+4L6tTl9m6PpqknWZvRt0rO1SRnJzw="   crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-		<script   src="https://code.jquery.com/jquery-1.12.3.min.js"   integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="   crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>-->
+		<script src="lib/jquery/jquery.min.js"></script>
+		<script src="lib/jquery-ui/jquery-ui.min.js"></script>
+		<link rel="stylesheet" href="lib/jquery-ui/jquery-ui.min.css"></link>
+		
+		<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css"></link>
+		<script src="script/portail.js"></script>
+		<link rel="stylesheet" href="style/portail.css"></link>
 	</head>
 	<body>
 		<header>
@@ -31,7 +38,11 @@
 						</div>
 						<div class="form-group">
 							<label>Promotion : </label>
-							<input type="date" id="promotion" name="promotion"></input>
+							<!--<input type="text" id="promotion" name="promotion"></input>-->
+							<select id='promotion' name='promotion'>
+								<option value=''></option>
+								<option value='2016'>2016</option>
+							</select>
 						</div>
 					</fieldset>
 					<fieldset>
@@ -46,37 +57,37 @@
 						</div>
 					</fieldset>
 					<fieldset>
-						<legend>Entreprise</legend>
+						<legend>Entreprise : </legend>
 						<div class="form-group">
-							<label>Secteur</label>
+							<label>Secteur : </label>
 							<input type="text" id="secteur" name="secteur"></input>
 						</div>
 						<div class="form-group">
-							<label>Nom</label>
+							<label>Nom : </label>
 							<input type="text" id="entreprise_nom" name="entreprise_nom"></input>
 						</div>
 						<div class="form-group">
-							<label>Taille</label>
+							<label>Taille : </label>
 							<input type="number" id="taille" name="taille"></input>
 						</div>
 					</fieldset>
 					<fieldset>
 						<legend>Contenu</legend>
 						<div class="form-group">
-							<label>Titre</label>
+							<label>Titre : </label>
 							<input type="text" id="titre" name="titre"></input>
 						</div>
 						<div class="form-group">
-							<label>Mots clefs</label>
+							<label>Mots clefs : </label>
 							<input type="text" id="keywords" name="keywords"></input>
 						</div>
 						<div class="form-group">
-							<label>Problématique</label>
-							<texteArea id="problematiques" name="problematiques"></texteArea>
+							<label>Problématique : </label>
+							<textarea id="problematiques" name="problematiques"></textarea>
 						</div>
 					</fieldset>
 					<div class="form-group">
-						<label>Note</label>
+						<label>Note : </label>
 						<input type="number" id="note" name="note"></input>
 					</div>
 				</form>
