@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang='fr'>
+	<head>
+		<title>Portail - recherche de mémoires </title>
+		<meta chartset="utf8"/>
+		<link rel="stylesheet" href="style/partail.css">
+		<script type="text/script" src="script/portail.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<script   src="https://code.jquery.com/jquery-1.12.3.min.js"   integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="   crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<header>
+			<h2>Portail des mémoires de l'iut de Bogigny</h2>
+		</header>
+		<div id="tabs">
+			<ul>
+				<li><a href="#portail-1">Rechercher</a></li>
+				<li><a href="#portail-2">Ajouter</a></li>
+			</ul>
+			<div id='portail-1'>
+				<header>
+					<h3>Recherche de mémoire</h3>
+				</header>
+				<form>
+					<fieldset>
+    					<legend>Apprenti</legend>
+						<div class="form-group">
+							<label for="">Formation : </label>
+							<input type="text" id="formation" name="formation"></input>
+						</div>
+						<div class="form-group">
+							<label>Promotion : </label>
+							<input type="date" id="promotion" name="promotion"></input>
+						</div>
+					</fieldset>
+					<fieldset>
+						<legend>Tuteur Pédagogique</legend>
+						<div class="form-group">
+							<label>Nom : </label>
+							<input type="text" id="tuteur_nom" name="tuteur_nom"></input>
+						</div>
+						<div class="form-group">
+							<label>Prenom : </label>
+							<input type="text" id="tuteur_prenom" name="tuteur_prenom"></input>
+						</div>
+					</fieldset>
+					<fieldset>
+						<legend>Entreprise</legend>
+						<div class="form-group">
+							<label>Secteur</label>
+							<input type="text" id="secteur" name="secteur"></input>
+						</div>
+						<div class="form-group">
+							<label>Nom</label>
+							<input type="text" id="entreprise_nom" name="entreprise_nom"></input>
+						</div>
+						<div class="form-group">
+							<label>Taille</label>
+							<input type="number" id="taille" name="taille"></input>
+						</div>
+					</fieldset>
+					<fieldset>
+						<legend>Contenu</legend>
+						<div class="form-group">
+							<label>Titre</label>
+							<input type="text" id="titre" name="titre"></input>
+						</div>
+						<div class="form-group">
+							<label>Mots clefs</label>
+							<input type="text" id="keywords" name="keywords"></input>
+						</div>
+						<div class="form-group">
+							<label>Problématique</label>
+							<texteArea id="problematiques" name="problematiques"></texteArea>
+						</div>
+					</fieldset>
+					<div class="form-group">
+						<label>Note</label>
+						<input type="number" id="note" name="note"></input>
+					</div>
+				</form>
+			</div>
+			<div id='portail-2'>
+				<header>
+					<h3>Ajout de mémoire</h3>
+				</header>
+				<form>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
