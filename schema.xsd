@@ -216,6 +216,8 @@
 			<xsd:element ref="apprenti"/>
 			<xsd:element ref="entreprise"/>
 			<xsd:element ref='contenu'/>
+			<xsd:element ref='appreciation'/>
+			<xsd:element ref='note'/>
 		</xsd:sequence>
 	</xsd:complexType>
 <!-- déclarations des attributs communs à plusieurs éléments -->
@@ -241,6 +243,7 @@
 	<xsd:element name="duree" type="duree"/>
 	<xsd:element name="outil" type="outil"/>
 	<xsd:element name="techno" type="techno"/>
+	<xsd:element name="appreciation" type="appreciation"/>
 	<xsd:element name="note" type="note"/>
 <!-- déclarations des éléments de type complexe -->
 	<xsd:element name="apprenti" type="apprentiType"/>
