@@ -33,17 +33,15 @@
 			<motClef></motClef>
 		</motsClefs>
 		<problematique></problematique>
+		<outils>
+			<outil></outil>
+		</outils>
+		<technos>
+			<techno></techno>
+		</technos>
 		<missions>
 			<mission>
 				<description></description>
-				<libelle></libelle>
-				<duree>P7M</duree>
-				<outils>
-					<outil></outil>
-				</outils>
-				<technos>
-					<techno></techno>
-				</technos>
 			</mission>
 		</missions>
 	</contenu>
