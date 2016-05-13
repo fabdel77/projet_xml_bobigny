@@ -198,7 +198,7 @@
 			<xsd:element ref="libelle"/>
 			<xsd:element ref="duree"/>
 			<xsd:element ref="outils"/>
-			<xsd:element ref="techno"/>
+			<xsd:element ref="technos"/>
 		</xsd:sequence>
 	</xsd:complexType>
 	<xsd:complexType name="outilsType">
