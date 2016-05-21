@@ -1,0 +1,56 @@
+<ficheMemoire xmlns="http://www.portfolios.com/fiche_memoire"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="./schema.xsd">
+	<apprenti>
+		<INE>0104015486L</INE>
+		<prenom></prenom>
+		<nom></nom>
+		<formation>LP - CIWM</formation>
+		<promotion>2016</promotion>
+		<tuteurPedago>
+			<prenom>Rim</prenom>
+			<nom>Djedidi</nom>
+			<fonction>Délégué enseignant</fonction>
+			<mail>rim@djedidi.com</mail>
+		</tuteurPedago>
+	</apprenti>
+	<entreprise>
+		<nom>Southside-ineractive</nom>
+		<site>http://southside-interactive.com</site>
+		<secteur>Innovation digital</secteur>
+		<adresse>56 rue de Miromesnil</adresse>
+		<taille>8</taille>
+		<description>Une entreprise qui fait des choses et des trucs</description>
+		<siret>51635161</siret>
+		<maitreApprentissage>
+			<prenom>Nicolas</prenom>
+			<nom>Laurio</nom>
+			<fonction>High Lord</fonction>
+			<mail>nicolas.laurio@southside-interactive.com</mail>
+		</maitreApprentissage>
+	</entreprise>
+	<contenu>
+		<titre>Création d'objet connecté</titre>
+		<motsClefs>
+            <motClef>Objets connectés</motClef>
+            <motClef>Web</motClef>
+			<motClef>Start-up</motClef>
+		</motsClefs>
+		<problematique>Comment exploiter les technologies web dans l'univers des objets connectés</problematique>
+		<outils>
+            <outil>Raspberry</outil>
+		</outils>
+		<technos>
+            <techno>NodeJs</techno>
+            <techno>Php</techno>
+			<techno>Mysql</techno>
+		</technos>
+		<missions>
+			<mission>
+				<description>Une mission dans laquelle il faut faire plein de choses</description>
+			</mission>
+		</missions>
+	</contenu>
+	<appreciation>Bien</appreciation>
+	<note>14</note>
+</ficheMemoire>
