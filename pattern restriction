@@ -1,0 +1,4 @@
+restriction pattern
+
+INE : <xsl:pattern value="^[0-9]{10}[A-Z]{1}$"/>
+mail :  <xsl:pattern value="^[a-z0-9_\-\.]{1,}@[a-z0-9_\-\.]{2}\.{1}[a-z]{2,}"/>
