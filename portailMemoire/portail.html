@@ -25,7 +25,7 @@
 				<li><a href="#portail-1">Rechercher</a></li>
 				<li><a href="#portail-2">Ajouter</a></li>
 			</ul>
-			<div id='portail-1'>
+			<div id='portail-1' class="col-sm-5 col-sm-push-2">
 				<header>
 					<h3>Recherche de mémoire</h3>
 				</header>
@@ -33,13 +33,13 @@
 					<fieldset>
     					<legend>Apprenti</legend>
 						<div class="form-group">
-							<label for="">Formation : </label>
-							<input type="text" id="formation" name="formation"></input>
+							<label for="formation">Formation : </label>
+							<input type="text" id="formation" name="formation" class="form-control"></input>
 						</div>
 						<div class="form-group">
-							<label>Promotion : </label>
+							<label for="promotion">Promotion : </label>
 							<!--<input type="text" id="promotion" name="promotion"></input>-->
-							<select id='promotion' name='promotion'>
+							<select id='promotion' name='promotion' class="form-control">
 								<option value=''></option>
 								<option value='2016'>2016</option>
 							</select>
@@ -48,27 +48,27 @@
 					<fieldset>
 						<legend>Tuteur Pédagogique</legend>
 						<div class="form-group">
-							<label>Nom : </label>
-							<input type="text" id="tuteur_nom" name="tuteur_nom"></input>
+							<label for="tuteur_nom">Nom : </label>
+							<input type="text" id="tuteur_nom" name="tuteur_nom" class="form-control"></input>
 						</div>
 						<div class="form-group">
-							<label>Prenom : </label>
-							<input type="text" id="tuteur_prenom" name="tuteur_prenom"></input>
+							<label for="tuteur_prenom">Prenom : </label>
+							<input type="text" id="tuteur_prenom" name="tuteur_prenom" class="form-control"></input>
 						</div>
 					</fieldset>
 					<fieldset>
 						<legend>Entreprise : </legend>
 						<div class="form-group">
-							<label>Secteur : </label>
-							<input type="text" id="secteur" name="secteur"></input>
+							<label for="secteur">Secteur : </label>
+							<input type="text" id="secteur" name="secteur" class="form-control"></input>
 						</div>
 						<div class="form-group">
-							<label>Nom : </label>
-							<input type="text" id="entreprise_nom" name="entreprise_nom"></input>
+							<label for="entreprise_nom">Nom : </label>
+							<input type="text" id="entreprise_nom" name="entreprise_nom" class="form-control"></input>
 						</div>
 						<div class="form-group">
-							<label>Taille : </label>
-							<select type="number" id="taille" name="taille">
+							<label for="taille">Taille : </label>
+							<select type="number" id="taille" name="taille" class="form-control">
 								<option value=""></otpion>
 								<option value="tpe">tpe (moins de 10 employés)</otpion>
 								<option value="pe">pe (entre 10 et 49 employés)</otpion>
@@ -80,29 +80,170 @@
 					<fieldset>
 						<legend>Contenu</legend>
 						<div class="form-group">
-							<label>Titre : </label>
-							<input type="text" id="titre" name="titre"></input>
+							<label for="titre">Titre : </label>
+							<input type="text" id="titre" name="titre" class="form-control"></input>
 						</div>
 						<div class="form-group">
-							<label>Mots clefs : </label>
-							<input type="text" id="keywords" name="keywords"></input>
+							<label for="keywords">Mots clefs : </label>
+							<input type="text" id="keywords" name="keywords" class="form-control"></input>
 						</div>
 						<div class="form-group">
-							<label>Problématique : </label>
-							<textarea id="problematiques" name="problematiques"></textarea>
+							<label for="problematique">Problématique : </label>
+							<textarea id="problematique" name="problematique" class="form-control"></textarea>
 						</div>
 					</fieldset>
 					<div class="form-group">
-						<label>Note : </label>
-						<input type="number" id="note" name="note"></input>
+						<label for="note">Note : </label>
+						<input type="number" id="note" name="note" class="form-control"></input>
 					</div>
+					<button type="submit" class="btn btn-primary btn-lg">Rechercher</button>
 				</form>
 			</div>
-			<div id='portail-2'>
+			<div id='portail-2' class="col-sm-5 col-sm-push-2">
 				<header>
 					<h3>Ajout de mémoire</h3>
 				</header>
 				<form>
+					<fieldset>
+    					<legend>Apprenti</legend>
+						<div class="form-group">
+							<label for="ineApprenti">INE : </label>
+							<input type="text" id="ineApprenti" name="ineApprenti" maxlength="11" class="form-control"></input>
+						</div>
+						<div class="form-group">
+							<label for="prenomApprenti">Prénom : </label>
+							<input type="text" id="prenomApprenti" name="prenomApprenti" maxlength="20" class="form-control"></input>
+						</div>
+						<div class="form-group">
+							<label for="nomApprenti">Nom : </label>
+							<input type="text" id="nomApprenti" name="nomApprenti" maxlength="40" class="form-control"></input>
+						</div>
+						<div class="form-group">
+							<label for="formationApprenti">Formation : </label>
+							<input type="text" id="formationApprenti" name="formationApprenti" maxlength="20" class="form-control"></input>
+						</div>
+						<div class="form-group">
+							<label for="promotionApprenti">Promotion : </label>
+							<select id='promotionApprenti' name='promotionApprenti' class="form-control">
+								<option value=''></option>
+								<option value='2016'>2016</option>
+							</select>
+						</div>
+					</fieldset>
+					<fieldset>
+    					<legend>Tuteur Pédagogique</legend>						
+						<div class="form-group">
+							<label for="prenomTuteurPedago">Prénom : </label>
+							<input type="text" id="prenomTuteurPedago" name="prenomTuteurPedago" maxlength="20" class="form-control"></input>
+						</div>
+						<div class="form-group">
+							<label for="nomTuteurPedago">Nom : </label>
+							<input type="text" id="nomTuteurPedago" name="nomTuteurPedago" maxlength="40" class="form-control"></input>
+						</div>
+						<div class="form-group">
+							<label for="fonctionTuteurPedago">Fonction : </label>
+							<input type="text" id="fonctionTuteurPedago" name="fonctionTuteurPedago" maxlength="20" class="form-control"></input>
+						</div>
+						<div class="form-group">
+							<label for="mailTuteurPedago">Mail : </label>
+							<input type="text" id="mailTuteurPedago" name="mailTuteurPedago" maxlength="40" class="form-control"></input>
+						</div>
+					</fieldset>
+					<fieldset>
+    					<legend>Entreprise</legend>						
+						<div class="form-group">
+							<label for="nomEntreprise">Nom : </label>
+							<input type="text" id="nomEntreprise" name="nomEntreprise" maxlength="40" class="form-control"></input>
+						</div>
+						<div class="form-group">
+							<label for="siteEntreprise">Site : </label>
+							<input type="text" id="siteEntreprise" name="siteEntreprise" maxlength="40" class="form-control"></input>
+						</div>
+						<div class="form-group">
+							<label for="secteurEntreprise">Secteur : </label>
+							<input type="text" id="secteurEntreprise" name="secteurEntreprise" maxlength="40" class="form-control"></input>
+						</div>
+						<div class="form-group">
+							<label for="adresseEntreprise">Adresse : </label>
+							<input type="text" id="adresseEntreprise" name="adresseEntreprise" maxlength="60" class="form-control"></input>
+						</div>
+						<div class="form-group">
+							<label for="tailleEntreprise">Taille : </label>
+							<select type="number" id="tailleEntreprise" name="tailleEntreprise" class="form-control">
+								<option value=""></otpion>
+								<option value="tpe">tpe (moins de 10 employés)</otpion>
+								<option value="pe">pe (entre 10 et 49 employés)</otpion>
+								<option value="me">me (entre 50 et 249 employés)</otpion>
+								<option value="ge">ge (plus de 250 employés)</otpion>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="descriptionEntreprise">Description : </label>
+							<textarea id="descriptionEntreprise" name="descriptionEntreprise" maxlength="250" class="form-control"></textarea>
+						</div>
+						<div class="form-group">
+							<label for="siretEntreprise">Siret : </label>
+							<input type="text" id="siretEntreprise" name="siretEntreprise" maxlength="14" class="form-control"></input>
+						</div>
+					</fieldset>
+					<fieldset>
+    					<legend>Maitre d'apprentissage</legend>						
+						<div class="form-group">
+							<label for="prenomMaitreApprentissage">Prénom : </label>
+							<input type="text" id="prenomMaitreApprentissage" name="prenomMaitreApprentissage" maxlength="20" class="form-control"></input>
+						</div>
+						<div class="form-group">
+							<label for="nomMaitreApprentissage">Nom : </label>
+							<input type="text" id="nomMaitreApprentissage" name="nomMaitreApprentissage" maxlength="40" class="form-control"></input>
+						</div>
+						<div class="form-group">
+							<label for="fonctionMaitreApprentissage">Fonction : </label>
+							<input type="text" id="fonctionMaitreApprentissage" name="fonctionMaitreApprentissage" maxlength="20" class="form-control"></input>
+						</div>
+						<div class="form-group">
+							<label for="mailMaitreApprentissage">Mail : </label>
+							<input type="text" id="mailMaitreApprentissage" name="mailMaitreApprentissage" maxlength="40" class="form-control"></input>
+						</div>
+					</fieldset>
+					<fieldset>
+    					<legend>Contenu du rapport</legend>						
+						<div class="form-group">
+							<label for="titreContenu">Titre : </label>
+							<input type="text" id="titreContenu" name="titreContenu" maxlength="64" class="form-control"></input>
+						</div>
+						<div class="form-group">
+							<label for="motClefContenu">Mots clefs: </label>
+							<input type="text" id="motClefContenu" name="motClefContenu" maxlength="240" class="form-control"></input>
+						</div>
+						<div class="form-group">
+							<label for="problematiqueContenu">Problématique : </label>
+							<input type="text" id="problematiqueContenu" name="problematiqueContenu" maxlength="150" class="form-control"></input>
+						</div>
+						<div class="form-group">
+							<label for="outilsContenu">Outils : </label>
+							<textarea id="outilsContenu" name="outilsContenu" maxlength="250" class="form-control"></textarea>
+						</div>
+						<div class="form-group">
+							<label for="technosContenu">Technos : </label>
+							<textarea id="technosContenu" name="technosContenu" maxlength="250" class="form-control"></textarea>
+						</div>
+						<div class="form-group">
+							<label for="missionsContenu">Missions : </label>
+							<textarea id="missionsContenu" name="missionsContenu" maxlength="250" class="form-control"></textarea>
+						</div>
+					</fieldset>
+					<fieldset>
+    					<legend>Notation</legend>
+						<div class="form-group">
+							<label for="appreciationNotation">Appréciation : </label>
+							<textarea id="appreciationNotation" name="appreciationNotation" maxlength="250" class="form-control"></textarea>
+						</div>
+						<div class="form-group">
+							<label for="noteNotation">Note : </label>
+							<input type="number" id="noteNotation" name="noteNotation" maxlength="2" class="form-control"></input>
+						</div>
+					</fieldset>
+					<button type="submit" class="btn btn-primary btn-lg">Ajouter la fiche</button>
 				</form>
 			</div>
 		</div>

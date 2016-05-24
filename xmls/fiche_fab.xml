@@ -1,0 +1,57 @@
+<ficheMemoire xmlns=""
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:schemaLocation="./schema.xsd">
+	<apprenti>
+		<INE>000000000</INE>
+		<prenom>Fab</prenom>
+		<nom>D</nom>
+		<formation>LP - CIWM</formation>
+		<promotion>2016</promotion>
+		<tuteurPedago>
+			<prenom>Rim</prenom>
+			<nom>Djedidi</nom>
+			<fonction>Délégué enseignant</fonction>
+			<mail>rim@djedidi.com</mail>
+		</tuteurPedago>
+	</apprenti>
+	<entreprise>
+		<nom>ADventori</nom>
+		<site>http://www.adventori.com</site>
+		<secteur>Publicité</secteur>
+		<adresse>56 rue Saint-Lazare</adresse>
+		<taille>26</taille>
+		<description>ADventori est une Data-Driven Creative Adserver dont la vocation est de personnaliser, mesurer et optimiser la création publicitaire.</description>
+		<siret>00000000000</siret>
+		<maitreApprentissage>
+			<prenom>Denis</prenom>
+			<nom>AZEzaeaze</nom>
+			<fonction>Directeur des opérations</fonction>
+			<mail>denis@adventori.com</mail>
+		</maitreApprentissage>
+	</entreprise>
+	<contenu>
+		<titre>La publicité sur internet en 2016</titre>
+		<motsClefs>
+            <motClef>Publicité</motClef>
+            <motClef>AdServer</motClef>
+			<motClef>AdBlock</motClef>
+		</motsClefs>
+		<problematique>Comment redorer l'image de la publicité sur internet et ainsi l'améliorer ?</problematique>
+		<outils>
+            <outil>Adobe Edge Animate CC</outil>
+            <outil>Google WebDesigner</outil>
+		</outils>
+		<technos>
+            <techno>HTML</techno>
+            <techno>CSS</techno>
+			<techno>JavaScript</techno>
+		</technos>
+		<missions>
+			<mission>
+				<description>Vérification de créa publicitaire</description>
+			</mission>
+		</missions>
+	</contenu>
+	<appreciation>Excellent, parfait, wahou amazing</appreciation>
+	<note>19,75</note>
+</ficheMemoire> 
